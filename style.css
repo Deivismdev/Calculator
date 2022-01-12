@@ -1,0 +1,164 @@
+*,*::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-weight: normal;
+}
+body{
+    padding:0;
+    margin:0%;
+    background-color: #F3EAE1;
+}
+
+.calculator-grid{
+    display:grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows: 35px minmax(120px,auto) repeat(6,100px);
+    background-image: linear-gradient(#3D3737, #393738);
+    
+}
+
+button{
+    cursor:pointer;
+    /* font-size: 2rem; */
+    outline: none;
+    background-color: #D7CCBA;
+    /* border-radius: 5px; */
+    /* padding:2em; */
+}
+
+button:active {
+    filter: brightness(100%);
+    transform: scale(0.96);
+  }
+
+.span-two-cl{
+    grid-column: span 2;
+}
+.span-two-rw{
+    grid-row: span 2;
+}
+
+.status-bar{
+    background-color: #D7CCBA;
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center
+}
+
+
+.output{
+    /* wut */
+    grid-column: 1 / -1;
+    background-color: rgba(0,0,0, .75);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction:column;
+    padding:10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.output .display-secondary{
+    color:rgba(255,255,255, .75);
+    font-size: 1.5rem;
+}
+
+.output .display-main{
+    color:white;
+    font-size: 2.5rem;
+}
+
+.light {
+    background-color: #D7CCBA;
+    background-image: radial-gradient(rgba(198, 189, 174, 0.9) 10% 45%, rgba(198, 189, 174, 0) 65%, #DDD3C3 75%, rgba(184, 172, 155, 0) 77%),
+        radial-gradient(rgba(169, 158, 142, 1) 10% 45%, rgba(169, 158, 142, 0) 65%, #DDD3C3 75%, rgba(184, 172, 155, 0) 77%),
+        radial-gradient(rgba(169, 158, 140, 0.55) 40%, rgba(169, 158, 140, 0) 54%),
+        radial-gradient(rgba(169, 158, 140, 0.55) 40%, rgba(169, 158, 140, 0) 54%),
+        radial-gradient(rgba(221, 211, 195, 1) 45%, rgba(221, 211, 195, 0) 60%),
+        linear-gradient(90deg, #D7CCBA, #EFE6DD, #E7DFD2);
+    background-size: 90px 135%,
+        90px 130%,
+        162.5% 90px,
+        162.5% 90px,
+        152.5% 60px,
+        100% 100%;
+    background-position: calc(100% + 65px) 50%,
+        -70px 50%,
+        50% 70px,
+        50% -65px,
+        50% -30px,
+        0 0;
+    background-repeat: no-repeat;
+    box-shadow: 0 -1px 0.5px -0.35px rgba(30, 27, 20, 0.95) inset,
+        0 -1.5px 0.75px -0.25px #5C584C inset,
+        0 -7px 6px -5px rgba(121, 114, 96, 0.25) inset,
+        1px 0 0.75px -0.25px #574F44 inset,
+        3px 0 2px -2px rgba(134, 123, 105, 0.75) inset,
+        0 1px 0.5px -0.35px #2E2D28 inset,
+        0 1.5px 0.75px -0.25px #5D564E inset,
+        -1px 0 0.75px -0.25px #C3BBAE inset,
+        5px 12px 10px -10px rgba(48, 36, 16, 0.75),
+        -15px 10px 15px -5px  rgba(48, 36, 16, 0.15),
+        25px 15px 20px 1px rgba(48, 36, 16, 0.05),
+        20px 3px 10px -10px rgba(48, 36, 16, 0.15);
+}
+
+.button p {
+    position: absolute;
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+    top: 10px;
+    left: 10px;
+    color: #605E74;
+    text-shadow: 0.15px 0.15px 1px #4E494F;
+}
+.key {
+    border-radius: 5px;
+    padding: 14px 16px 10px 14px;
+    position: relative;
+}
+
+.top-wrapper {
+    display: grid;
+    grid-template-columns: 95px 95px 95px 95px 140px;
+    grid-template-rows: 95px;
+    column-gap: 4px;
+    padding: 7px 10px 5px 8px;
+    background-image: linear-gradient(#3D3737, #393738);
+    border-radius: 7px;
+}
+
+.light .inner {
+    border: none;
+    position: relative;
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    background-color: #F2E9E2;
+    background-image: linear-gradient(90deg, #F2E9E2, #ECE4D9);
+    box-shadow: -1.5px 0 1.25px -1px #F4EDE3 inset,
+        -3px 0 1.5px -1px #EDE5DA inset,
+        0 1.25px 1.25px -1px #EDE5DA inset,
+        0 3px 1.5px -1px #EBE1D5 inset,
+        0.85px 0 1.5px -1px #F4EDE3,
+        1px 0 1.25px -1px #D4C7B6,
+        1px 1px 3px -1px #E0D5C3,
+        1px 0 1.5px -1px #EDE1D1,
+        0px -1.25px 1.25px rgba(228, 219, 204, 0.55),
+        0 -1.5px 1.25px rgba(216, 204, 188, 0.75),
+        0 -8px 5px -5px rgba(171, 160, 142, 0.25),
+        0 -0.25px 0.5px #EADED2 inset,
+        0 -1px 1px -0.5px #E9E1D4 inset,
+        0 -1.5px 1.5px #EDE5DA inset,
+        1px 0 0.5px -0.5px #E4DBCA inset,
+        1.5px 0 1.5px -1px #EDE5D8 inset,
+        4px 0 2px -2px #F1EAE2 inset,
+        -1px 0 0.25px -0.75px #E2D9C8,
+        -1px 0 0.5px -0.5px rgba(176, 168, 149, 0.3),
+        -4px 0 5px -5px rgba(167, 160, 141, 0.25);
+}
