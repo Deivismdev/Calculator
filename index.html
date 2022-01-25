@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" async></script>
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+    <title>Calculator</title>
+
+</head>
+<body>
+
+    <div class="calculator-grid">
+        <div class="status-bar">
+            <button>ON</button>
+            <div class="game-stats">
+                <!-- HP:  -->
+                <span class="hp-dot-green" id=""></span>
+                <span class="hp-dot-green" id=""></span>
+                <span class="hp-dot-green" id=""></span>
+                <!-- LVL:  -->
+                <span class="lvl-dot" id=""></span>
+                <span class="lvl-dot" id=""></span>
+                <span class="lvl-dot" id=""></span>
+                
+            </div>
+
+        </div>
+        <div class="output">
+            <div display-secondary class="display-secondary">
+
+            </div>
+            <div display-main class="display-main">
+
+            </div>
+        </div>
+            <!--dont ask -->
+        <div class="key dark">
+            <button numlock class="inner">num</button>
+        </div>
+
+        <div class="key dark">
+            <button data-operation class="inner">/</button>
+        </div>
+        <div class="key dark">
+            <button data-operation class="inner">*</button>
+        </div>
+
+        <div class="key dark">
+            <button data-operation class="inner">-</button>
+        </div>
+        <div class="key light">
+            <button data-number class="inner">7</button>
+        </div>
+
+        <div class="key light">
+            <button data-number class="inner">8</button>
+        </div>
+        <div class="key light">
+            <button data-number class="inner">9</button>
+        </div>
+        
+        <div class="key dark span-two-rw">
+            <button data-operation class="inner">+</button>
+        </div>
+        <div class="key light">
+            <button data-number class="inner">4</button>
+        </div>
+        <div class="key light">
+            <button data-number class="inner">5</button>
+        </div>
+        <div class="key light">
+            <button data-number class="inner">6</button>
+        </div>
+
+        <div class="key light">
+            <button data-number class="inner">1</button>
+        </div>
+        <div class="key light">
+            <button data-number class="inner">2</button>
+        </div>
+        <div class="key light">
+            <button data-number class="inner">3</button>
+        </div>
+
+        <div class="key dark span-two-rw">
+            <button data-equals class="inner">Enter</button>
+        </div>
+        <div  class="key dark span-two-cl">
+            <button data-number class="inner">0</button>
+        </div>
+        <div class="key dark">
+            <button data-number class="inner">.</button>
+        </div>
+
+
+    </div>
+
+    <div class="footer">
+        <a class="link" href="https://github.com/Deivismdev">
+            <img class="githubLogo" src="img\githubLogo.png" alt="">
+        </a>
+        
+        Deividas Motiejūnas <span class="year"></span>
+    </div>
+
+</body>
+</html>
