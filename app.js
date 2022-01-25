@@ -249,3 +249,5 @@ equalsButton.addEventListener("click", () => {
 //     calculator.delete();
 //     calculator.updateDisplay();
 // });
+
+// am i going crazy or whats happening?
